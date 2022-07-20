@@ -41,9 +41,18 @@ requirements:
     - openblas * *openmp*  # [linux]
 
 test:
+  requirements:
+    - python >=3
+    - pytest
+    - masci-tools
   commands:
-    - inpgen -h    
+    - inpgen -h
     - test -f $PREFIX/bin/fleur_MPI  # [unix]
+    - fleur_MPI -h
+    - ulimit -s unlimited
+    - cd build; juDFT_PYTHON="python" ./run_tests.sh
+
+
 about:
   home: https://www.flapw.de/
   license: MIT
