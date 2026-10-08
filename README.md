@@ -16,7 +16,6 @@ Documentation: https://www.flapw.de/
 The FLAPW-Method is an all-electron method which within density functional theory is universally applicable to all atoms of the periodic table and to systems with compact as well as open structures. It is widely considered to be the most precise electronic structure method in solid state physics.
 an optional C extension for a serious speed boost.
 
-
 Current build status
 ====================
 
